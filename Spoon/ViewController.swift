@@ -11,11 +11,11 @@ import Cocoa
 class ViewController: NSViewController {
 
     
-    
-    //Nick test
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
