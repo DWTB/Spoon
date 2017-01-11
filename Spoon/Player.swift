@@ -9,5 +9,20 @@
 import Cocoa
 
 class Player: NSObject {
+    
+    //Declarations
+    var Money: Int = 100000
+    
+    func setMoney(value: Int){
+        Money = value
+    }
+    
+    func addMoney(value: Int){
+        Money =+ value
+    }
+    
+    func getMoney() -> Int{
+        return Money
+    }
 
 }

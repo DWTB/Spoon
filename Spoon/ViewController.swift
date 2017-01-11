@@ -10,6 +10,11 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+<<<<<<< HEAD
+    
+    
+=======
+>>>>>>> master
     override func viewDidLoad() {
         super.viewDidLoad()
 
