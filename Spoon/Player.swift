@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-
 class Player: MainModel {
     
     //Declarations

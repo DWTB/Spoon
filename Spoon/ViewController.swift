@@ -28,9 +28,6 @@ class ViewController: NSViewController {
     @IBOutlet weak var weekSalary: NSTextField!
     @IBOutlet weak var weekCost: NSTextField!
     @IBOutlet weak var netIncome: NSTextField!
-
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
