@@ -8,21 +8,30 @@
 
 import Cocoa
 
-class Player: NSObject {
+class Player: MainModel {
     
     //Declarations
-    var Money: Int = 100000
+    var Money: Int = 1000
     
-    func setMoney(value: Int){
-        Money = value
+    
+    
+    func nextWeek(){
+        Money += runModel()
     }
     
-    func addMoney(value: Int){
-        Money =+ value
+    func upgradeFood(){
+        if Money > upgradeFoodPrice[foodLevel-1]{
+            Money -= upgradeFoodPrice[foodLevel-1]
+            foodLevel += 1
+        }
+        model()
     }
     
-    func getMoney() -> Int{
-        return Money
+    func upgradeJob(){
+        if Money > upgradeJobPrice[jobLevel-1]{
+            Money -= upgradeJobPrice[jobLevel-1]
+            jobLevel += 1
+        }
+        model()
     }
-
 }
