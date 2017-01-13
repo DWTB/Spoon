@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSViewController{
     //Declarations
     let player = Player()
     @IBOutlet weak var moneyLabel: NSTextField!
@@ -28,11 +28,14 @@ class ViewController: NSViewController {
     @IBOutlet weak var weekSalary: NSTextField!
     @IBOutlet weak var weekCost: NSTextField!
     @IBOutlet weak var netIncome: NSTextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        player.model()
+        player.setUp()
         updateLabels()
     }
 
@@ -60,26 +63,27 @@ class ViewController: NSViewController {
     }
     
     func updateLabels(){
+        player.update()
         
         //Levels
-        moneyLabel.stringValue = ("$ \(String(player.Money))")
-        foodLevel.stringValue = String(player.foodLevel)
-        jobLevel.stringValue = String(player.jobLevel)
+        moneyLabel.stringValue = ("$ \(String(player.money))")
+        foodLevel.stringValue = String(player.getFoodLevel())
+        jobLevel.stringValue = String(player.getJobLevel())
         
         //Prices
-        foodPrice.stringValue = "$\(String(player.currentFoodPrice))"
-        jobPrice.stringValue = "$\(String(player.currentJobPrice))"
+        foodPrice.stringValue = "$\(String(player.getFoodUpgradePrice()))"
+        jobPrice.stringValue = "$\(String(player.getJobUpgradePrice()))"
         
         //Incomes
-        foodIncome.stringValue = "-$\(String(player.foodCost))"
-        jobIncome.stringValue = "$\(String(player.hourlyPay))"
+        foodIncome.stringValue = "-$\(String(player.getFoodCost()))"
+        jobIncome.stringValue = "$\(String(player.getJobCost()))"
         
         
         //Right Side
         workHours.stringValue = "\(String(player.hours)) Hours"
         weekSalary.stringValue = "$\(String(player.pay))"
-        weekCost.stringValue = "-$\(String(player.foodCost))"
-        netIncome.stringValue = ("$ \(String(player.income))")
+        weekCost.stringValue = "-$\(String(player.getFoodCost()))"
+        netIncome.stringValue = ("$ \(String(player.netIncome))")
         
         
     }
