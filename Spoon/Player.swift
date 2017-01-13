@@ -17,6 +17,7 @@ class Player: NSObject{
     var hours: Int = 0
     var money: Int = 1000
     var pay: Int = 0
+    var netIncome: Int = 0
     
     let workHours = [20, 25, 35, 40, 45]
     
@@ -29,11 +30,16 @@ class Player: NSObject{
         hours = workHours[food.getLevel()-1]
     }
     
-    func nextWeek(){
+    func update(){
         hours = workHours[food.getLevel()-1]
         
-        pay = (job.getCost() * hours) - food.getCost()
+        pay = (job.getCost() * hours)
         
+        netIncome = pay - food.getCost()
+    }
+    
+    func nextWeek(){
+        update()
         money += pay
     }
     

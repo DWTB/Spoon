@@ -63,6 +63,7 @@ class ViewController: NSViewController{
     }
     
     func updateLabels(){
+        player.update()
         
         //Levels
         moneyLabel.stringValue = ("$ \(String(player.money))")
@@ -81,8 +82,8 @@ class ViewController: NSViewController{
         //Right Side
         workHours.stringValue = "\(String(player.hours)) Hours"
         weekSalary.stringValue = "$\(String(player.pay))"
-        weekCost.stringValue = "Not Implemented" //"-$\(String(player.foodCost))"
-        netIncome.stringValue = "Not Implemented" //("$ \(String(player.income))")
+        weekCost.stringValue = "-$\(String(player.getFoodCost()))"
+        netIncome.stringValue = ("$ \(String(player.netIncome))")
         
         
     }

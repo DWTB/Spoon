@@ -17,7 +17,6 @@
 		E5D0968B1E26C65000F5C587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D096891E26C65000F5C587 /* Main.storyboard */; };
 		E5D096961E26C65000F5C587 /* SpoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D096951E26C65000F5C587 /* SpoonTests.swift */; };
 		E5D096A11E26C65000F5C587 /* SpoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D096A01E26C65000F5C587 /* SpoonUITests.swift */; };
-		E5D096AF1E26CB0B00F5C587 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D096AE1E26CB0B00F5C587 /* MainModel.swift */; };
 		E5D096B11E26CF0C00F5C587 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D096B01E26CF0C00F5C587 /* Player.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		E5D0969C1E26C65000F5C587 /* SpoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D096A01E26C65000F5C587 /* SpoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoonUITests.swift; sourceTree = "<group>"; };
 		E5D096A21E26C65000F5C587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5D096AE1E26CB0B00F5C587 /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		E5D096B01E26CF0C00F5C587 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +107,6 @@
 			children = (
 				E5D096831E26C64F00F5C587 /* AppDelegate.swift */,
 				E5D096851E26C64F00F5C587 /* ViewController.swift */,
-				E5D096AE1E26CB0B00F5C587 /* MainModel.swift */,
 				E580E8671E2978640017BED8 /* Element.swift */,
 				E5D096B01E26CF0C00F5C587 /* Player.swift */,
 				E5D096871E26C64F00F5C587 /* Assets.xcassets */,
@@ -281,7 +278,6 @@
 				E5D096861E26C64F00F5C587 /* ViewController.swift in Sources */,
 				E55E04881E2734CD00FC9EED /* Food.swift in Sources */,
 				E5D096841E26C64F00F5C587 /* AppDelegate.swift in Sources */,
-				E5D096AF1E26CB0B00F5C587 /* MainModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
