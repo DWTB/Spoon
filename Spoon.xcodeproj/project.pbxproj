@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E55E04881E2734CD00FC9EED /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55E04871E2734CD00FC9EED /* Food.swift */; };
+		E55E048A1E2734E300FC9EED /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55E04891E2734E300FC9EED /* Job.swift */; };
+		E55E048C1E2734FA00FC9EED /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55E048B1E2734FA00FC9EED /* House.swift */; };
+		E580E8681E2978640017BED8 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = E580E8671E2978640017BED8 /* Element.swift */; };
 		E5D096841E26C64F00F5C587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D096831E26C64F00F5C587 /* AppDelegate.swift */; };
 		E5D096861E26C64F00F5C587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D096851E26C64F00F5C587 /* ViewController.swift */; };
 		E5D096881E26C64F00F5C587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D096871E26C64F00F5C587 /* Assets.xcassets */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E55E04871E2734CD00FC9EED /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		E55E04891E2734E300FC9EED /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		E55E048B1E2734FA00FC9EED /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		E580E8671E2978640017BED8 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		E5D096801E26C64F00F5C587 /* Spoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D096831E26C64F00F5C587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5D096851E26C64F00F5C587 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,10 +110,14 @@
 				E5D096831E26C64F00F5C587 /* AppDelegate.swift */,
 				E5D096851E26C64F00F5C587 /* ViewController.swift */,
 				E5D096AE1E26CB0B00F5C587 /* MainModel.swift */,
+				E580E8671E2978640017BED8 /* Element.swift */,
 				E5D096B01E26CF0C00F5C587 /* Player.swift */,
 				E5D096871E26C64F00F5C587 /* Assets.xcassets */,
 				E5D096891E26C65000F5C587 /* Main.storyboard */,
 				E5D0968C1E26C65000F5C587 /* Info.plist */,
+				E55E04871E2734CD00FC9EED /* Food.swift */,
+				E55E04891E2734E300FC9EED /* Job.swift */,
+				E55E048B1E2734FA00FC9EED /* House.swift */,
 			);
 			path = Spoon;
 			sourceTree = "<group>";
@@ -262,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E55E048C1E2734FA00FC9EED /* House.swift in Sources */,
 				E5D096B11E26CF0C00F5C587 /* Player.swift in Sources */,
+				E580E8681E2978640017BED8 /* Element.swift in Sources */,
+				E55E048A1E2734E300FC9EED /* Job.swift in Sources */,
 				E5D096861E26C64F00F5C587 /* ViewController.swift in Sources */,
+				E55E04881E2734CD00FC9EED /* Food.swift in Sources */,
 				E5D096841E26C64F00F5C587 /* AppDelegate.swift in Sources */,
 				E5D096AF1E26CB0B00F5C587 /* MainModel.swift in Sources */,
 			);

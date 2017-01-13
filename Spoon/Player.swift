@@ -7,30 +7,85 @@
 //
 
 import Cocoa
-class Player: MainModel {
+class Player: NSObject{
     
     //Declarations
-    var Money: Int = 1000
+    let food = Food()
+    let job = Job()
+    let house = House()
     
+    var hours: Int = 0
+    var money: Int = 1000
+    var pay: Int = 0
     
+    let workHours = [20, 25, 35, 40, 45]
+    
+    //Functions
+    func setUp(){
+        food.setUp()
+        job.setUp()
+        house.setUp()
+        pay = job.getCost() - food.getCost()
+        hours = workHours[food.getLevel()-1]
+    }
     
     func nextWeek(){
-        Money += runModel()
+        hours = workHours[food.getLevel()-1]
+        
+        pay = (job.getCost() * hours) - food.getCost()
+        
+        money += pay
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    //Food
     
     func upgradeFood(){
-        if Money > upgradeFoodPrice[foodLevel-1]{
-            Money -= upgradeFoodPrice[foodLevel-1]
-            foodLevel += 1
-        }
-        model()
+        food.upgrade()
     }
     
+    func downgradeFood(){
+        food.downgrade()
+    }
+    
+    func getFoodCost() -> Int{
+        return food.getCost()
+    }
+    
+    func getFoodLevel() -> Int{
+        return food.getLevel()
+    }
+    
+    func getFoodUpgradePrice() -> Int{
+        return food.getUpgradePrice()
+    }
+
+    
+    //Jobs
+    
     func upgradeJob(){
-        if Money > upgradeJobPrice[jobLevel-1]{
-            Money -= upgradeJobPrice[jobLevel-1]
-            jobLevel += 1
-        }
-        model()
+        job.upgrade()
+    }
+    
+    func downgradeJob(){
+        job.downgrade()
+    }
+    
+    func getJobCost() -> Int{
+        return job.getCost()
+    }
+    
+    func getJobLevel() -> Int{
+        return job.getLevel()
+    }
+    
+    func getJobUpgradePrice() -> Int{
+        return job.getUpgradePrice()
     }
 }
