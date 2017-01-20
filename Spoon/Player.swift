@@ -43,13 +43,6 @@ class Player: NSObject{
         money += pay
     }
     
-    
-    
-    
-    
-    
-    
-    
     //Food
     
     func upgradeFood(){
